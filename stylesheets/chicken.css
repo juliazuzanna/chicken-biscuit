@@ -1,0 +1,101 @@
+body {
+    font-size: 16px;
+    font-family: arial, sans-serif;
+    background-color: #006363;
+    color: #5CCCCC;
+}
+
+a {               
+    color: #FF9640;
+}
+
+a:hover {
+  color: #FF7400;
+}
+
+footer {
+    font-size: .7em;
+    text-align: right;
+    background-color: #004040;
+    color: #1D7373;
+    -webkit-border-bottom-right-radius: 7px;
+	-webkit-border-bottom-left-radius: 7px;
+	-moz-border-radius-bottomright: 7px;
+	-moz-border-radius-bottomleft: 7px;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+}
+
+#facebook {
+	float: left;
+	margin-top: -3px;
+}
+
+/* Layout */
+.container {
+    max-width: 620px;
+    padding: 20px;
+    margin:0 auto;
+    -webkit-border-top-left-radius: 7px;
+	-webkit-border-top-right-radius: 7px;
+	-moz-border-radius-topleft: 7px;
+	-moz-border-radius-topright: 7px;
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+}   
+.center-right {
+	width: 198px;
+	margin: 10px auto;
+	text-align: left;
+} 
+
+/* Colours and stuff */
+
+.light-content {
+    background-color: #5CCCCC;
+    color:#1D7373;
+    text-align: center;
+}
+.dark-content {
+    background-color: #1D7373;
+    text-align: center;
+}
+.logo {
+    font-family: 'Lily Script One', cursive;
+    -webkit-font-smoothing: antialiased;
+    font-size: 4em;
+    color: #FFB273;
+    margin: 5px 0;
+}
+.quote {
+    font-style: italic;
+    margin: 0 0 20px;
+}
+
+.flags {
+	background-color: #5CCCCC;
+	color: #1D7373;
+	display: inline-block;
+	padding: .4em;
+	width: 25px;
+	text-align: center;;
+	margin-right: 10px;
+	font-size: .8em;
+	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	-khtml-border-radius: 4px;
+ 	border-radius: 4px;
+}
+
+
+/* ze animation */
+#thebiscuit {
+    -webkit-animation: rotation 15s infinite linear;
+    margin: 25px 0 40px;
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(359deg);}
+    to   {-webkit-transform: rotate(0deg);}
+}
+

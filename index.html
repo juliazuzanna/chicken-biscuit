@@ -8,59 +8,49 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Chicken Biscuit</title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='http://fonts.googleapis.com/css?family=Lily+Script+One' rel='stylesheet' type='text/css'>
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-        <style>
-            body {
-                font-size: 16px;
-                font-family: arial, sans-serif;
-                background-color: #006363;
-                color: #5CCCCC;
-            }
-            .container {
-                background-color: #1D7373;
-                max-width: 620px;
-                padding: 20px;
-                margin:0 auto;
-                text-align: center;
-            }
-            .logo {
-                font-family: 'Lily Script One', cursive;
-                -webkit-font-smoothing: antialiased;
-                font-size: 4em;
-                color: #FFB273;
-                margin: 5px 0;
-            }
-            .quote {
-                font-style: italic;
-                margin: 0 0 20px;
-            }
-            a {
-                color: #FF7400;
-            }
-            a:hover {
-                color: #FF9640;
-            }
-        </style>
-
-        <!-- <script src="/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
+        <link rel="stylesheet" type="text/css" href="stylesheets/chicken.css"> 
     </head>
     <body>
+
         <!--[if lt IE 9]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
-        <div class="container">
+        
+        <!-- FB button -->
+        <div id="fb-root"></div>
+        <script>
+            (function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script><!-- /FB button -->
+
+        <div class="container dark-content">
             <h1 class="logo">Chicken Biscuit</h1>
             <p class="quote">When is a chicken not a chicken? When it’s a biscuit</p>
-            <img src="img/biscuit.png" alt="Chicken Biscuit" width="260" >
-            <p>Ciastko z kurczakiem</p>
-            <p>Biscuit au poulet</p>
-            <p>Biscotto di pollo</p>
-            <p>Hoender koekie</p>
+            <img src="img/biscuit.png" alt="Chicken Biscuit" width="260" id="thebiscuit" >
+            <div class="center-right">
+                <p><i class="flags">PL</i>Ciastko z kurczakiem</p>
+                <p><i class="flags">FR</i>Biscuit au poulet</p>
+                <p><i class="flags">IT</i>Biscotto di pollo</p>
+                <p><i class="flags">AFR</i>Hoender koekie</p>
+                <p><i class="flags">GR</i>μπισκότο κοτόπουλο</p>
+            </div>
         </div>
+        <footer class="container">
+            <div id="facebook">
+                <div class="fb-share-button" data-href="http://chicken-biscuit.com/" data-type="button_count"></div>
+            </div>
+            juliazuzanna &copy; 2014
+        </footer>
 
-        <!-- GA! -->
+        <!-- GA -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -69,7 +59,7 @@
 
           ga('create', 'UA-48741507-1', 'chicken-biscuit.com');
           ga('send', 'pageview');
-
-        </script>
+        </script><!-- /GA -->
+        
     </body>
 </html>
